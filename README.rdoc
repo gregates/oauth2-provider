@@ -101,10 +101,10 @@ behavior:
 === Schema
 
 Add the <tt>Songkick::OAuth2::Provider</tt> tables to your app's schema. This is
-done using <tt>Songkick::OAuth2::Schema.up</tt>, which will run all
+done using <tt>Songkick::OAuth2::Model::Schema.up</tt>, which will run all
 the gem's migrations that have not yet been applied to your database.
 
-  Songkick::OAuth2::Schema.up
+  Songkick::OAuth2::Model::Schema.up
   I, [2012-10-31T14:52:33.801428 #7002]  INFO -- : Migrating to SongkickOauth2SchemaOriginalSchema (20120828112156)
   ==  SongkickOauth2SchemaOriginalSchema: migrating =============================
   -- create_table(:oauth2_clients)
@@ -113,7 +113,7 @@ the gem's migrations that have not yet been applied to your database.
      -> 0.0009s
   ...
 
-To rollback migrations, use <tt>Songkick::OAuth2::Schema.down</tt>.
+To rollback migrations, use <tt>Songkick::OAuth2::Model::Schema.down</tt>.
 
 
 === Model Mixins
