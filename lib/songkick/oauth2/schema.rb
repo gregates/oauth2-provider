@@ -15,7 +15,7 @@ module Songkick
         ActiveRecord::Migrator.down(migrations_path)
       end
       class << self
-        alias :down :migrate
+        alias :down :rollback
       end
 
       def self.migrations_path
